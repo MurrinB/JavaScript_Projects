@@ -9,4 +9,6 @@ function myFunction() {       //create function
     var sentence = "I am learning";    //assign str variable
     sentence += " a lot from this program!";  //used += to concatenate sentence
     document.getElementById("Concatenate").innerHTML = sentence; // used id for result of event
+
 }
+

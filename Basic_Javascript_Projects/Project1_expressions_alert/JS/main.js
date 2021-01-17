@@ -15,3 +15,7 @@ var daughter = daughter.fontcolor("pink"); //assigned many variables and a color
 document.write(daughter);
 
 document.write(4+6); //used expression
+
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+}                 //create a function that gives the current time 

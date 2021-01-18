@@ -27,3 +27,20 @@ function myFunction() {
     "Erik drives a " + Erik.Vehicle_Color + "-colored" + Erik.Vehicle_Model +
     " manufactered in " + Erik.Vehicle_Year;
 }
+
+var Joe = new Vehicle("Toyota", "Camery", 2015, "Black");
+
+function vehicle_new() {
+    document.getElementById("New_and_This").innerHTML = 
+    Joe.Vehicle_Model;
+}
+
+function Pet(name, color, breed, age) {
+    this.name = name;
+    this.color = color;
+    this.breed = breed;
+    this.age = age;
+}
+
+var Max = new Pet("Max", "Black", "Miniature Pincher", 9);
+var Thor = new Pet("Thor", "Beige", "Silky Terror", 9);

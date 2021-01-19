@@ -24,3 +24,28 @@ document.write(position + "<br>")
 var str_2 = "I'm an important message!";
 var make_uppercase = str_2.toUpperCase();
 document.write(make_uppercase + "<br>")
+
+//numbers to string
+function string_method() {
+    var X = 182;
+    document.getElementById("Numbers_to_string").innerHTML = X.toString();
+}
+
+//to precision method
+function precision_method() {
+    var Y = 15678.45679012344545;
+    document.getElementById("Precision").innerHTML = Y.toPrecision(8);
+
+}
+
+//used toFixed method 
+function fixed_function() {
+    var N = 3.14296785847;
+    document.getElementById("fixed_decimal").innerHTML = N.toFixed(2);
+} 
+
+//used valueOf to get primitive value of a number
+function primitive_function() {
+    var B = 22;
+    document.getElementById('primitive').innerHTML = B.valueOf();
+}

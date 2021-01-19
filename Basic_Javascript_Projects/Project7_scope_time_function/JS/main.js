@@ -48,6 +48,23 @@ function study_function() {
     }
     document.getElementById("study_more").innerHTML = Reply;
 }
+
+// create time function
+function Time_function() {
+    var Time = new Date().getHours();
+    var Reply;
+    if (Time < 12 == Time > 0) {
+        Reply = "It is morning";
+    }
+    else if (Time > 12 == Time < 18) {
+        Reply = "It is afternoon";
+    }
+    else {
+        Reply = "It is evening";
+    }
+    document.getElementById("Time_of_day").innerHTML = Reply;
+}
+
 // intentional error for difference between global and local and consolelog use
 
 function Add_numbers_4() {
@@ -55,6 +72,18 @@ function Add_numbers_4() {
 }
 Add_numbers_3();
 Add_numbers_4();
+// trying yo debug using console.log
+function Add_number_3() {
+    var D = 20;
+    console.log(15 + D);
+}
+
+function Add_numbers_4() {
+    console.log(D + 100);
+}
+Add_numbers_3();
+Add_numbers_4();
+// end debug: Still getting error D is not defined??
 
 function get_Date() {
     if (new Date().getHours() < 17) {

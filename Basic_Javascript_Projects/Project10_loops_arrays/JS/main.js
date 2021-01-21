@@ -26,3 +26,13 @@ function for_Loop() {
     }
     document.getElementById("List_of_Instruments").innerHTML = content;
 }
+
+// CREATE AN ARRAY AND USE FUNCTION TO DISPLAY PART OF THE ARRAY
+function array_Function() {
+    var grocery_list = ["eggs", "milk", "bacon", "bread"];
+    grocery_list[0] = "Great Value";
+    grocery_list[1] = "Daisy";
+    grocery_list[2] = "Black Label";
+    grocery_list[3] = "Natural Oats";
+    document.getElementById("Array").innerHTML = "Here is the brand for our bacon " + grocery_list[2] + ".";
+}

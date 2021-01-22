@@ -34,3 +34,10 @@ function class_function() {
     var A = document.getElementsByClassName("click");
     A[1].innerHTML = "The text has changed!";
 }
+
+//ADD WORDS AND STYLE TO CANVAS
+var c = document.getElementById("something_pretty");
+var text = c.getContext("2d");
+text.font = "75px Impact";
+text.strokeText("Good Morning!", 25, 130);
+

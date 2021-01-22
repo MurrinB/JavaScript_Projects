@@ -28,3 +28,9 @@ function princess_function() {
     }
     document.getElementById("Output").innerHTML = princess_output;
 }
+
+// USED GETELEMENTBYCLASS
+function class_function() {
+    var A = document.getElementsByClassName("click");
+    A[1].innerHTML = "The text has changed!";
+}

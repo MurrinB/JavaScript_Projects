@@ -41,3 +41,15 @@ var text = c.getContext("2d");
 text.font = "75px Impact";
 text.strokeText("Good Morning!", 25, 130);
 
+// ADD LINEAR GRADIENT TO CANVAS_2
+var d = document.getElementById("canvas_2");
+var tx = d.getContext("2d");
+
+var grd = tx.createLinearGradient(0, 0, 300, 0);
+grd.addColorStop(0, "greenyellow");
+grd.addColorStop(1, "white");
+
+tx.fillStyle = grd;
+tx.fillRect (0, 0, 500, 250);
+
+

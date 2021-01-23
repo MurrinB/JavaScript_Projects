@@ -1,0 +1,32 @@
+/*STYLE FORM*/
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(130, 10, 228);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: rgb(175, 102, 243);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(248, 79, 248);
+}
+
+.form-container {
+    border-radius: 5px;
+    background-color: rgba(128, 0, 128, 0.534);
+    padding: 20px;
+    width: 25%;
+}

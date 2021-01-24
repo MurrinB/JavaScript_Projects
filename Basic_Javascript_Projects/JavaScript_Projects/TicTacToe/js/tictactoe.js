@@ -9,7 +9,7 @@ function placeXorO(squareNumber) {
     
 
     if (activePlayer === 'X') { //CHECK TO SEE WHOS TURN IT IS
-        select.style.backgroundImage = 'url("images/x.png")';
+        select.style.backgroundImage = 'url("images/x.png" )';
     } else {
         select.style.backgroundImage = 'url("images/o.png")';
     }
@@ -137,4 +137,13 @@ disableClick();
 audio('./media/winGame.mp3');
 animateLineDrawing() ;
 setTimeout(function () { clear(); resetGame(); }, 1000);
+}
+
+//RESET GAME AFTER WIN OR TIE
+function resetGame() {
+    for (let i = 0; i < 9; i++) {
+        let square = document.getElementById(String(i));
+        square.style.backgroundImage = '';
+    }
+    selectedSquares = [];
 }

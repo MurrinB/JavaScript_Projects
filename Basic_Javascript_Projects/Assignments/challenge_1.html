@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Method Challenge</title>
+    </head>
+    <body>
+        <style>
+            div {
+                padding: 50px;
+                background-color: aquamarine;
+                color: rgb(193, 18, 236);
+            }
+        </style>
+        <script>
+            function myFunction(event) {
+                var x = document.createEvent("MouseEvent");
+                x.initMouseEvent("mouseover", true, true, window, 0, 0, 0, 0, 0, false, false, false,
+                false, 0, null);
+
+                document.getElementById('myDiv').dispatchEvent(x);
+            }
+        </script>
+        <h1>CreateEvent() Method Used:</h1>
+        <p>Scroll your mouse over the colored space</p>
+        <div onmouseover="this.innerHTML += '&';" id="myDiv">&</div>
+    </body>
+</html>

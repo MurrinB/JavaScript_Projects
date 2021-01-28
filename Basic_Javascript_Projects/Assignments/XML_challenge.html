@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <p id="XML_Example"></p>
+        <script>
+            var XML_Parser, XML_Document;
+
+            //CREATE TEXT STRING
+            var Bicycle ="<bicycle>" +
+            "<size>Child's Small</size>" +
+            "<color>Blue</color>" +
+            "<accessories>Training Wheels</accessories>" +
+            "</bicycle>";
+
+            //CREATE XML DOM PARSER
+            XML_Parser = new DOMParser();
+
+            //CREATES NEW XML DOM OBJECT USING THE TEXT STRING
+            XML_Document = XML_Parser.parseFromString(Bicycle,"text/xml");
+
+            document.getElementById("XML_Example").innerHTML = "This bicycle is a " +
+            XML_Document.getElementsByTagName("size")[0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>

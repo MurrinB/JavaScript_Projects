@@ -1,0 +1,87 @@
+/*STYLES FOR TODO LIST*/
+html {
+    font-family: "Avenir Next", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+body {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input {
+    padding-top: 30px;
+    width: 500px;
+    height: 60px;
+    font-size: 40px;
+    border: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+li {
+    text-align: left;
+    font-size: 40px;
+    list-style: none;
+    margin: 0;
+    color: navy;
+}
+
+/*STYLE INPUT AREA*/
+input[id="task"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid darkblue;
+    opacity: 1;
+    border-radius: 4px;
+}
+
+input[id="task"]:focus {
+    background-color: lightskyblue;
+}
+
+/*BUTTON STYLES*/
+#add {
+    background-color: rgb(35, 158, 35);
+    border: green;
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+    width: 100%;
+}
+
+#add:hover {
+    background-color: lightgreen;
+}
+
+.remove {
+    margin: 8px 8px;
+    border: darkred;
+    background-color: red;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 4px 4px;
+    color: white;
+    transition-duration: 0.4s;
+    padding-bottom: 5px;
+}
+
+.remove:hover {
+    background-color: rgb(250, 110, 133);
+}
+/* FOOTER STYLINGS */
+footer {
+    border: 1px solid darkblue;
+    position: -webkit-sticky;
+    position: sticky;
+    position: fixed;
+    bottom: 20px;
+}
+
